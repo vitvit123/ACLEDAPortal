@@ -13,6 +13,7 @@ body{
 
 .mainA{
     background-color: white;
+    border: none;
     width: 50%;
     height: 100%;
     border-top-left-radius: 5% ;
@@ -75,9 +76,9 @@ form .username input {
 
 form .username i {
     position: absolute;
-    top: 75%;
-    transform: translateY(-75%);
-    left: 5px; 
+    top: 70%;
+    transform: translateY(-70%);
+    left: 10px; 
     cursor: pointer;
 }
 form #LoginBTN{
@@ -123,7 +124,7 @@ form .password input {
     outline: none;
 }
 
-form .password .fa-eye {
+form .password .fa-eye ,#iconeye-slash {
     position: absolute;
     top: 60%;
     transform: translateY(-60%);
@@ -133,7 +134,7 @@ form .password .fa-eye {
 form .password .fa-lock{
     position: absolute;
     top: 60%;
-    left: 5px;
+    left: 10px;
     transform: translateY(-60%);
     cursor: pointer;
 }
@@ -151,3 +152,21 @@ form .password input:focus {
         box-shadow: 0 0 50px 0 #143c6d;
     }
 }
+#iconeye-slash {
+    display: none; 
+}
+@media (max-width: 770px) {
+    .mainA{
+        display: none;
+        width: 0%;
+    }
+    .containB{
+        width: 100%;
+        background-color: #8999a7;
+        border-radius: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+  }
